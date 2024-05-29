@@ -8,5 +8,5 @@ export type Product = {
     gender: string;
     colour: string;
     type: string;
-    quantity: number;
+    stock: number;
 }

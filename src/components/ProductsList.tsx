@@ -37,28 +37,14 @@ const ProductsList = ({
         ? filteredProductsByCategory.map((product) => {
             return (
               <div key={product.id}>
-                <ProductCard
-                  image={product.image}
-                  title={product.title}
-                  price={product.price}
-                  colour={product.colour}
-                  gender={product.gender}
-                  type={product.type}
-                />
+                <ProductCard product={product} />
               </div>
             );
           })
         : filteredProducts.map((product) => {
             return (
               <div key={product.id}>
-                <ProductCard
-                  image={product.image}
-                  title={product.title}
-                  price={product.price}
-                  colour={product.colour}
-                  gender={product.gender}
-                  type={product.type}
-                />
+                <ProductCard product={product} />
               </div>
             );
           })}

@@ -11,7 +11,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
     colour: "Blue",
     type: "Hoodie",
-    quantity: 12,
+    stock: 12,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const productsData = <Product[]>[
       "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
     colour: "Green",
     type: "Basic",
-    quantity: 19,
+    stock: 19,
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
     colour: "Red",
     type: "Hoodie",
-    quantity: 16,
+    stock: 16,
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
     colour: "Green",
     type: "Polo",
-    quantity: 15,
+    stock: 15,
   },
   {
     id: 15,
@@ -60,7 +60,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
     colour: "Red",
     type: "Polo",
-    quantity: 20,
+    stock: 20,
   },
   {
     id: 16,
@@ -73,7 +73,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
     colour: "Blue",
     type: "Hoodie",
-    quantity: 10,
+    stock: 10,
   },
   {
     id: 17,
@@ -85,7 +85,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
     colour: "Green",
     type: "Basic",
-    quantity: 11,
+    stock: 11,
   },
   {
     id: 18,
@@ -97,7 +97,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
     colour: "Red",
     type: "Basic",
-    quantity: 17,
+    stock: 17,
   },
   {
     id: 19,
@@ -109,7 +109,7 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
     colour: "Blue",
     type: "Polo",
-    quantity: 18,
+    stock: 18,
   },
   {
     id: 20,
@@ -121,6 +121,6 @@ export const productsData = <Product[]>[
     image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
     colour: "Green",
     type: "Hoodie",
-    quantity: 13,
+    stock: 13,
   },
 ];
