@@ -12,12 +12,12 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex justify-center my-2">
+      <div className="flex justify-center mt-20 mb-4">
         <Input
           type="text"
           placeholder="Search"
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full sm:w-80"
+          className="w-full ml-40 mr-2 sm:w-80"
         />
       </div>
 

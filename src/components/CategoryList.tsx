@@ -16,7 +16,7 @@ const CategoryList = ({
   setSelectedTypes,
 }: CategoryListType) => {
   return (
-    <div className="min-w-36">
+    <div className="min-w-36 fixed left-6 top-20">
       {/* Colours */}
       <div className="flex flex-col items-start px-3 gap-2">
         <h1>Colour</h1>

@@ -26,7 +26,7 @@ const ProductsList = ({
   });
 
   return (
-    <div className="grid grid-cols-1 px-2 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-4">
+    <div className="grid grid-cols-1 ml-40 px-2 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-4">
       {(filteredProducts.length === 0 ||
         filteredProductsByCategory.length === 0) && (
         <p>🔍 No products found!</p>
