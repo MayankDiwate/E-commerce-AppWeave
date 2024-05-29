@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="bg-gray-300 py-3 px-6 flex items-center justify-between">
+      <div className="bg-gray-200 shadow-md z-50 py-3 px-6 flex items-center justify-between">
         <a href="/" className="text-xl">
           <div className="text-2xl">TeeRex Store</div>
         </a>

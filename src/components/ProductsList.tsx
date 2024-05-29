@@ -27,8 +27,10 @@ const ProductsList = ({
 
   return (
     <div className="grid grid-cols-1 px-2 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-4">
-      {filteredProducts.length === 0 && <p>No products found</p>}
-      {filteredProductsByCategory.length === 0 && <p>No products found</p>}
+      {(filteredProducts.length === 0 ||
+        filteredProductsByCategory.length === 0) && (
+        <p>🔍 No products found!</p>
+      )}
 
       {(selectedColours && selectedColours.length > 0) ||
       (selectedGenders && selectedGenders.length > 0) ||
