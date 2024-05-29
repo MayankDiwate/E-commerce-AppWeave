@@ -32,7 +32,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: ./client
+          context: .
           platforms: linux/amd64
           push: true
           # The tags should be in the following format
