@@ -59,7 +59,7 @@ export const cartSlice = createSlice({
         product.quantity >= 1 &&
         product.quantity < product.stock
       ) {
-        product.quantity++;
+        product.quantity = product.quantity + 1;
         state.total += product.price;
       }
     },
@@ -70,9 +70,9 @@ export const cartSlice = createSlice({
       if (
         product?.quantity &&
         product.quantity >= 2 &&
-        product.quantity < product.stock
+        product.quantity <= product.stock
       ) {
-        product.quantity--;
+        product.quantity = product.quantity - 1;
         state.total -= product.price;
       }
     },

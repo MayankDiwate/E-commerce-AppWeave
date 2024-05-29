@@ -24,8 +24,7 @@ const QuantitySelector = ({ id }: { id: number }) => {
         type="number"
         value={product?.quantity}
         min={1}
-        max={10}
-        className="w-12 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+        className="w-10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
         onChange={(e) => console.log(e.target.value)}
       />
       <Button

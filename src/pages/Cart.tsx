@@ -19,16 +19,14 @@ const Cart = () => {
     return (
       <div className="flex flex-col gap-2 text-lg items-center justify-center h-screen">
         🛒 Your cart is empty!
-        <Button onClick={() => navigate("/")}>
-          Go home
-        </Button>
+        <Button onClick={() => navigate("/")}>Go home</Button>
       </div>
     );
   }
 
   return (
     <div>
-      <div className="flex flex-col items-center py-4">
+      <div className="flex flex-col items-center py-4 mt-14">
         {products.map((product) => {
           return (
             <div
@@ -48,26 +46,28 @@ const Cart = () => {
                   </p>
                 </div>
               </div>
-              <QuantitySelector id={product.id} />
-              <Button
-                variant="destructive"
-                onClick={() => dispatch(removeFromCart(product))}
-                className="flex gap-1 items-center"
-              >
-                <Trash2 size={18} />
-                <span className="hidden sm:inline">Delete</span>
-              </Button>
+              <div className="flex gap-10 justify-between">
+                <QuantitySelector id={product.id} />
+                <Button
+                  variant="destructive"
+                  onClick={() => dispatch(removeFromCart(product))}
+                  className="flex gap-1 items-center"
+                >
+                  <Trash2 size={18} />
+                  <span className="hidden sm:inline">Delete</span>
+                </Button>
+              </div>
             </div>
           );
         })}
       </div>
       <Separator />
-      <div className="flex flex-col sm:flex-row justify-between items-end sm:items-center mx-auto sm:w-[80%] p-4">
+      <div className="flex flex-col mt-2 sm:flex-row justify-between items-end sm:items-center mx-auto sm:w-[80%] p-4">
         <div className=" text-lg text-center">
           Total amount: <span className="font-bold">${total}</span>
         </div>
         <Button
-          className="mt-4 w-full sm:w-40"
+          className="w-full sm:w-40"
           onClick={() => {
             dispatch(reset());
             toast.success("Checkout Successful");
